@@ -13,6 +13,7 @@ public class MessageHash256 extends DecorateurMessage {
         super();
         this.message = message;
         this.hash = hash(message.getContenu());
+        super.code = this.hash;
     }
 
     public String hash(final String contenu) {

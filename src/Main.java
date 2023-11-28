@@ -20,8 +20,5 @@ public class Main {
 
         Message messageRunLengthEncoding = new MessageRunLengthEncoding(message);
         System.out.println(messageRunLengthEncoding.getContenu());
-
-        Message messageRunLengthEncoding2 = new MessageByteRunLengthEncoding(message);
-        System.out.println(messageRunLengthEncoding2.getContenu());
     }
 }

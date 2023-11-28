@@ -10,6 +10,7 @@ public class MessageInverse extends DecorateurMessage {
         super();
         this.message = message;
         this.inverse = inverse(message.getContenu());
+        super.code = this.inverse;
     }
 
     public String inverse(String contenu) {

@@ -10,6 +10,7 @@ public class MessageRunLengthEncoding extends DecorateurMessage {
         super();
         this.message = message;
         this.code = code(message.getContenu());
+        super.code = this.code;
     }
 
     public String code(String contenu) {

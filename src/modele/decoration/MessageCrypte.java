@@ -10,6 +10,7 @@ public class MessageCrypte extends DecorateurMessage {
         super();
         this.message = message;
         this.crypte = crypte(message.getContenu(), graine);
+        super.code = this.crypte;
     }
 
     public String crypte(String contenu, int graine) {
